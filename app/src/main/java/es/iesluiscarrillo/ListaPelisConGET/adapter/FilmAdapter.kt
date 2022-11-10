@@ -1,11 +1,11 @@
-package es.iesluiscarrillo.peliculas.adapter
+package es.iesluiscarrillo.ListaPelisConGET.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import es.iesluiscarrillo.peliculas.Film
-import es.iesluiscarrillo.peliculas.FilmProvider
-import es.iesluiscarrillo.peliculas.R
+import es.iesluiscarrillo.ListaPelisConGET.Film
+import es.iesluiscarrillo.ListaPelisConGET.FilmProvider
+import es.iesluiscarrillo.ListaPelisConGET.R
 
 class FilmAdapter(val filList: List<Film>) : RecyclerView.Adapter<FilmViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmViewHolder {

@@ -1,4 +1,4 @@
-package es.iesluiscarrillo.peliculas
+package es.iesluiscarrillo.ListaPelisConGET
 
 import org.junit.Test
 

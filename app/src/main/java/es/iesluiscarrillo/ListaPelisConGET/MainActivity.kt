@@ -1,10 +1,10 @@
-package es.iesluiscarrillo.peliculas
+package es.iesluiscarrillo.ListaPelisConGET
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import es.iesluiscarrillo.peliculas.adapter.FilmAdapter
-import es.iesluiscarrillo.peliculas.databinding.ActivityMainBinding
+import es.iesluiscarrillo.ListaPelisConGET.adapter.FilmAdapter
+import es.iesluiscarrillo.ListaPelisConGET.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
