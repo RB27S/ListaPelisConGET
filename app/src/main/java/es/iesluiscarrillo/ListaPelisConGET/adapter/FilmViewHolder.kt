@@ -11,9 +11,8 @@ class FilmViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val binding = ItemFilmBinding.bind(view)
     fun render(filmModel: Film) {
         binding.FilmName.text = filmModel.title
-        Glide.with(binding.FilmPhoto.context).load(filmModel.photo).into(binding.FilmPhoto)
+        Glide.with(binding.FilmPhoto.context).load("https://image.tmdb.org/t/p/w500/${filmModel.photo}").into(binding.FilmPhoto)
 
-        binding.FilmPhoto.setOnClickListener {Toast.makeText(binding.FilmPhoto.context, filmModel.title, Toast.LENGTH_LONG).show()}
-        itemView.setOnClickListener {Toast.makeText(binding.FilmPhoto.context, filmModel.title, Toast.LENGTH_LONG).show()}
+        itemView.setOnClickListener {Toast.makeText(binding.FilmPhoto.context, filmModel.title, Toast.LENGTH_SHORT).show()}
     }
 }
