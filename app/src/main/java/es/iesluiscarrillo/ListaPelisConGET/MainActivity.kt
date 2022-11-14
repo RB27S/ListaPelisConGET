@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun searchByPopularity() {
         CoroutineScope(Dispatchers.IO).launch {
-            val call:Response<FilmResponse> = getRetrofit().create(APIService::class.java).getMoviesByPopularity("/movie/popular?api_key=17ec01baf46b9efa1282ce4069740ea6")
+            val call:Response<FilmResponse> = getRetrofit().create(APIService::class.java).getMoviesByPopularity("movie/popular?api_key=17ec01baf46b9efa1282ce4069740ea6")
             val films = call.body()
             runOnUiThread {
                 if (call.isSuccessful) {
